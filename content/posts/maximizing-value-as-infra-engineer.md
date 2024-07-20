@@ -10,7 +10,7 @@ As an Infrastructure Engineer (or DevOps/Cloud/Platform engineer), basically you
 - Maintenance
 - Project
 
-Of these three types, only one actually are generating values. Unfortunately, most of our time are likely spent on the other two types that aren't. Hence, the question of how to maximizing your values as engineer are simply all about refocusing your work from something that aren't generating value to something that are generating values. In the subsequent section, i will talk about approach that I have taken to achieve that goal.
+Of these three types, only one actually are generating values. Unfortunately, most of our time are likely to be spent on the other two types that aren't. Hence, the question of how to maximizing your values as engineer are simply all about refocusing your work from something that aren't generating value to something that are. In the subsequent section, i will talk about some approaches that I have taken to achieve that goal.
 
 # Incident Handling
 
@@ -34,17 +34,30 @@ The next type of work that an engineer can perform are maintenance. Unlike incid
 
 To understand why maintenance is still important, one need to know that many types of incident is like a time bomb, that keep ticking until it went off. Or you can also see it as a crack in some machine. By the time, the cracks is getting bigger and piling up, and at some point it will try to break loose. To prevent that, we can either patch or replace the component with the crack, so the machine can last longer. This will prevent you from having the mental turmoil of handling a bad incident.
 
-As a start, it maybe good idea to have a collection of your inventory along with all of their maintenance item and schedule. Performing maintenance alone may not eradicate incident completely, but at least you can have a chance to avoid some incident from happening. Perhaps now you have less incident in your system, hence a better MTBF. But when your system is become bigger and complex, your maintenance item is also become bigger. At some point it will take all the time left you have.
+As a start, it maybe good idea to have a collection of your inventory along with all of their maintenance item and schedule. By following the schedule, you can have a chance to avoid some incident from happening. After a while perhaps now you have less incident in your system, hence a better MTBF. But performing maintenance alone may not eradicate incident completely. And when your system is become bigger and complex, your maintenance item is also become bigger. At some point it will take all the time left you have.
 
 This is where your plan need to be upgraded, and the first thing that you can do from here is to automating the maintenance itself. Instead of manually upgrading a VM or the operating system, you may want Terraform to do that for you. And instead of periodically cleanup your test data by hand, you may want Ansible to do that for you (or maybe just cronjob would be enough). Those action would reduce the time you need for each maintenance item.
 
-And if that alone is not enough, perhaps you want to offload that load to someone. I have to admit that we are living in a different world now than 10-20 year ago, with SaaS. You can order a new PostgreSQL instance in Google Cloud Platform CloudSQL and let them do the most maintenance needed. It may not always met your requirement or use case, but if it is, and the cost is still justifiable, then I would recommend you to atleast considering to use them, because by doing so can save you a lot of time from doing maintenance, and focus on the next type of work. The one that in the beginning is way more important.
+And if that alone is not enough, perhaps you want to offload that load to someone. I have to admit that we are living in a different world now than 10-20 year ago, with all these Software as a Service. You can now "order" a new PostgreSQL instance in Google Cloud Platform CloudSQL and let them do the most of the maintenance. It may not always met your requirement or use case, but if it is, and if the cost is still justifiable, I would recommend you to atleast considering to use them because by doing so can save you a lot of time from doing maintenance yourself. And having this precious time, you can start focus on the next type of work. The one that in the beginning is way more important.
 
 At NiceDay we call this maintainability, or the time you need to do maintenance to be effective enough in preventing incidents. And we thrive to always improve the maintainability by either reducing time it need for maintenance, or reducing the number of component that we need to maintain by reducing the complexity of the system.
 
 
 # Projects
 
+Now we have come to the last type of work for an engineer. It could be an ordinary project that the results can directly be used by our customer, like developing a new feature of existing product or even a new product itself. It could also be an internal project that the results can be used by company or other team in the organization, like providing a new service to allow development team to deploy their own test and development more easily. 
+
+As i mentioned in the beginning, projects are the only work that could generate values. But even projects are only generating value whenever it finally reach their users. That's mean to start generating value, we need to deliver them. And because the time spent without delivering is times where we are not generating value as well, we need to deliver them fast. The abiliy to deliver fast in a complex system used to be seems impossible not so long time ago, but fortunately we have seen a lot of progress and new technology that try to resolve this lately. From my own experience, I have feel technology like kubernetes (and helm) have lifted most of the work needed to deploy a new complex system by abstracting away the common and low level component. And introducing CI/CD system even simplifying the deployment process even further by just pushing the latest to git repo.
+
+Capabilities to deliver fast also has another side effect: it allow us to deliver more often. At NiceDay, we normally deliver something xx in a day. In the end, we believe the ability to deliver fast and often is the key to be a productive and impactful team.
+
+Values can also be generated by helping company (or another part of it) to generate further values, and this should be the idea internal projects. Allowing our developer to deploy a new test and development environment more easily could boost their productivity by a xxx.
+
+Another good example of this internal projects are cost optimization, because the cost that we succesfully saved by the end of the day will become increase in the revenue.
+
+
 # Conclusion
 
 Reducing time spent in incident handling and maintenance, focus on project.
+
+Providing value to our customer.
