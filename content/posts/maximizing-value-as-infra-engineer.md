@@ -1,5 +1,5 @@
 +++
-title = 'Maximizing Value as An Infrastructure Engineer'
+title = 'Maximizing Value as an Infrastructure Engineer'
 date = 2024-07-20T01:31:32+07:00
 draft = false
 +++
