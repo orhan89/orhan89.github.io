@@ -1,7 +1,7 @@
 +++
 title = 'Maximizing Value as An Infrastructure Engineer'
 date = 2024-07-20T01:31:32+07:00
-draft = true
+draft = false
 +++
 
 As an Infrastructure Engineer (or DevOps/Cloud/Platform engineer, you name it), your work can be grouped into three types:
