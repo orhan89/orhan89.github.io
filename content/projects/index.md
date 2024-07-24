@@ -10,7 +10,7 @@ menu:
 
 	Slack Application that allows your team to report operational issues directly from Slack. 
 
-- [Reaction Count Action](https://github.com/orhan89/reaction-count-action)
+- [Reaction Counter](https://github.com/orhan89/reaction-count-action)
 
 	A github action that will count number of reaction to an issue
 
