@@ -1,5 +1,14 @@
 baseURL = 'https://rhariady.xyz/'
 languageCode = 'en-us'
-title = ''
+title = 'rhariady.xyz'
 theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
-params.author = 'Ricky Hariady'
+
+SectionPagesMenu = "main"
+enableRobotsTXT = true
+
+[params]
+  author = 'Ricky Hariady'
+
+[[params.ananke_socials]]
+name = "twitter"
+url = "https://twitter.com/rickyhariady"

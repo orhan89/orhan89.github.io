@@ -1,6 +1,7 @@
 +++
 title = 'Maximizing Value as an Infrastructure Engineer'
 date = 2024-07-20T01:31:32+07:00
+omit_header_text = true
 draft = false
 +++
 

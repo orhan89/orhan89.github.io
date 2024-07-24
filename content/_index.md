@@ -1,6 +1,9 @@
-+++
-title = ""
-+++
+---
+title: " "
+omit_header_text: true
+cascade:
+  featured_image: '/images/main2.jpg'
+---
 
 Hi! My name is **Ricky**, and this is my personal site. 
 
