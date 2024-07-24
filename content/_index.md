@@ -8,4 +8,4 @@ I am currently working as **Principal Engineer / Head of Infrastructure** at Nic
 
 I am interested in technology (especially programming and infrastructure), electronics, and a little bit of history. 
 
-I am also a licensed **amateur radio** with callsign YD1EXP.
+I am also a **licensed amateur radio**. My callsign is YD1EXP.
