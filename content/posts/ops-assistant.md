@@ -2,7 +2,7 @@
 title: 'An AI based assistant for Infrastructure Engineer'
 date: 2024-08-15T08:47:07+07:00
 omit_header_text: true
-draft: true
+draft: false
 featured_image: '/images/ops-assistant-banner.jpg'
 ---
 
